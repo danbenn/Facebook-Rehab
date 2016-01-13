@@ -1,0 +1,27 @@
+{
+	/*Problems: doesn't show profiles when using search bar */
+	"name": "Facebook Rehab",
+	"version": "1.0",
+	"description": "Overwhelmed by social media? 
+	Take a break without deactivating your Facebook. 
+	Facebook Rehab leaves the search bar, messages
+	and notifications bar visible while hiding everything
+	else.",
+	"manifest_version": 2,
+	"permissions": [
+		"http://www.facebook.com/*",
+		"https://www.facebook.com/*"
+	],
+	"icons": {
+	// 	//"16": "rehab16.jpg",
+	// 	"48": "rehab48.jpg",
+	 	"128": "rehab128.jpg"
+	},
+	"content_scripts": [
+		{
+			"matches": ["http://www.facebook.com/*", "https://www.facebook.com/*"],
+			"css": ["fb_rehab.css"],
+			"run_at": "document_idle"
+		}
+	]
+}

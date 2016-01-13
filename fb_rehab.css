@@ -1,0 +1,18 @@
+/*News Feed Content*/
+#stream_pagelet {
+	visibility: hidden !important;
+}
+/*User Groups*/
+#leftCol {
+	visibility: hidden !important;
+}
+/*Reminders, suggested people, ads;
+display:none is necessary to collapse
+the "Suggested Groups" container */
+#rightCol {
+	display: none;
+}
+/*Ticker and 'Friends Active Now'*/
+div._51x_ {
+	visibility: hidden !important;
+}
